@@ -127,7 +127,7 @@ export default function Home({ serverSideWords }) {
                           : counterParole > i
                           ? {
                               //PAROLA AZZECCATA
-                              backgroundColor: 'rgba(0,255,100,0.5)',
+                              backgroundColor: 'rgba(0,230,100,0.5)',
                               borderRadius: '3px',
                             }
                           : {}
