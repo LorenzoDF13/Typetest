@@ -5,12 +5,32 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
+p > span {
+  display: inline-block;
+  user-select: none;
+}
+.resultsP {
+  margin: 0;
+}
 a {
   color: inherit;
   text-decoration: none;
 }
-
+.icon-container:hover .icon {
+  transform: rotate(360deg);
+  transition: 1s ease;
+}
+.icon-container:hover {
+  cursor: pointer;
+}
 * {
   box-sizing: border-box;
+}
+@keyframes fade {
+  from {
+    transform: translate(-50%, -100vh);
+  }
+  to {
+    transform: translate(-50%, 0);
+  }
 }
